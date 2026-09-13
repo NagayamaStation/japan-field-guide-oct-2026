@@ -88,8 +88,8 @@
     const sect=s.sections;
     const content=sect['YOKAI ALERT']||'';
     const coverage=content.match(/^<p>.*?<[/]p>/);
-    return renderYokai(s)+'<div class="coverage">'+(coverage?coverage[0]:'')+'</div>' +
-      fold('<span><span class="report-kicker">FIELD REPORT 01</span><span class="report-title">YOKAI ALERT</span></span>',coverage?content.slice(coverage[0].length):content,'report-fold')+
+    return '<div class="coverage">'+(coverage?coverage[0]:'')+'</div>' +
+      fold('<span><span class="report-kicker">FIELD REPORT 01</span><span class="report-title">YOKAI ALERT</span></span>',renderYokai(s)+(coverage?content.slice(coverage[0].length):content),'report-fold')+
       fold('<span><span class="report-kicker">FIELD REPORT 02</span><span class="report-title">NINJA WARNING REPORT</span></span>',sect['NINJA WARNING REPORT'],'report-fold ninja')+
       fold('<span><span class="report-kicker">FIELD REPORT 03</span><span class="report-title">SPECIAL CONCERNS</span></span>',sect['SPECIAL CONCERNS'],'report-fold concerns');
   }
