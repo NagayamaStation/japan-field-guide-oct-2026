@@ -1,0 +1,12 @@
+{
+  "id": "./",
+  "name": "Japan Field Guide",
+  "short_name": "Japan Guide",
+  "description": "Your October road book, hotel dates and expedition reports.",
+  "start_url": "./#route",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f1f4f8",
+  "theme_color": "#142841",
+  "icons": [{"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}]
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#142841">
+  <meta name="description" content="Your October Japan road book. Clear hotel dates, regional chapters, Maps links and expedition reports.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Japan Field Guide · October 2026</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <script src="./theme.js"></script>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./data.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to guide</a>
+  <header class="app-header">
+    <a class="wordmark" href="#route" aria-label="Japan Field Guide, all stops"><span class="mark" aria-hidden="true">旅</span><span>JAPAN<br><b>FIELD GUIDE</b></span></a>
+    <div class="header-actions">
+      <button class="save-button theme-button" id="night-mode" type="button" aria-label="Night mode" aria-pressed="false"><span id="theme-icon" aria-hidden="true">☾</span> <span id="theme-label">Night</span></button>
+      <button class="save-button" id="save-guide" type="button">Keep on phone <span aria-hidden="true">↗</span></button>
+    </div>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="app-footer"><span>OCTOBER 2026</span><span id="offline-status" role="status">Pocket edition</span></footer>
+  <dialog id="phone-dialog" aria-labelledby="phone-title">
+    <div class="dialog-top"><span class="eyebrow">TAKE IT WITH YOU</span><button type="button" class="close-button" id="close-phone" aria-label="Close phone instructions">×</button></div>
+    <h2 id="phone-title">Your guide, one tap away.</h2>
+    <p id="cache-message" role="status">Checking offline availability…</p>
+    <div class="phone-instruction"><h3>iPhone</h3><p>Open this link in Safari. Use <strong>Share → Add to Home Screen</strong>, then open the new icon once while online.</p></div>
+    <div class="phone-instruction"><h3>Android</h3><p>Open this link in Chrome. Use the browser menu → <strong>Add to Home screen</strong> or <strong>Install app</strong>.</p></div>
+    <button id="install-app" class="primary-action" hidden type="button">Install guide</button>
+    <p class="small-note">The saved guide includes every chapter and alert. Google Maps and source websites need their own connection or downloaded maps.</p>
+  </dialog>
+  <noscript><p class="no-script">This pocket guide needs JavaScript to open the chapters. Please enable it and reload.</p></noscript>
+</body>
+</html>
